@@ -18,6 +18,8 @@ class Home extends StatelessWidget {
         ),
       ),
       body: Column(
+        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+        crossAxisAlignment: CrossAxisAlignment.stretch,
         children: <Widget>[
           Container(
             child: Text(
@@ -28,7 +30,8 @@ class Home extends StatelessWidget {
             color: Colors.black54,
             margin: EdgeInsets.symmetric(horizontal: 60, vertical: 30),
             padding: EdgeInsets.fromLTRB(30, 40, 30, 40),
-          )
+          ),
+          Image.asset('images/innuva_logo.jpg')
         ],
       ),
     );

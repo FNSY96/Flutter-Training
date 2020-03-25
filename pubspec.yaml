@@ -64,7 +64,7 @@ flutter:
       fonts:
         - asset: fonts/BadScript-Regular.ttf
 
-#  -family: ShadowsIntoLightTwo-Regular.ttf
-
+  assets:
+    - images/innuva_logo.jpg
     # For details regarding fonts from package dependencies,
     # see https://flutter.dev/custom-fonts/#from-packages
