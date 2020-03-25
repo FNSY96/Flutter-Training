@@ -12,15 +12,22 @@ class Home extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.amber,
-        title: Text('Fady\'s First App'),
+        title: Text(
+          'Fady\'s First App',
+          style: TextStyle(fontFamily: 'ShadowsIntoLightTwo'),
+        ),
       ),
       body: Column(
         children: <Widget>[
           Container(
-            child: Text('Let\'s develope Apps!'),
+            child: Text(
+              'Let\'s develope Apps!',
+              style: TextStyle(
+                  color: Colors.amber, fontSize: 30, fontFamily: 'BadScript'),
+            ),
             color: Colors.black54,
             margin: EdgeInsets.symmetric(horizontal: 60, vertical: 30),
-            padding: EdgeInsets.fromLTRB(30, 40, 50, 60),
+            padding: EdgeInsets.fromLTRB(30, 40, 30, 40),
           )
         ],
       ),
