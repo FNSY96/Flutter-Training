@@ -14,7 +14,7 @@ class Home extends StatelessWidget {
         backgroundColor: Colors.amber,
         title: Text(
           'Fady\'s First App',
-          style: TextStyle(fontFamily: 'ShadowsIntoLightTwo'),
+          style: TextStyle(fontFamily: 'ShadowsIntoLightTwo', fontSize: 30),
         ),
       ),
       body: Column(
@@ -33,6 +33,12 @@ class Home extends StatelessWidget {
           ),
           Image.asset('images/innuva_logo.jpg')
         ],
+      ),
+      floatingActionButton: IconButton(
+        onPressed: () {},
+        icon: Icon(Icons.email),
+        iconSize: 70,
+        color: Colors.lightGreen,
       ),
     );
   }
