@@ -20,7 +20,10 @@ class Home extends StatelessWidget {
       body: Column(
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         crossAxisAlignment: CrossAxisAlignment.stretch,
-        children: <Widget>[textBoxContainer(), innuvaLogoImageAsset()],
+        children: <Widget>[
+          Expanded(flex: 4,child: textBoxContainer()),
+          Expanded(flex: 6, child: innuvaLogoImageAsset())
+        ],
       ),
       floatingActionButton: emailButton(),
     );
@@ -33,7 +36,7 @@ Image innuvaLogoImageAsset() {
 
 Container textBoxContainer() {
   return Container(
-    child: Text('Let\'s develope Apps!', style: myAppTextStyle()),
+    child: Text('Let\'s develope Apps!', style: myAppTextStyle(), textAlign: TextAlign.center,),
     color: Colors.black54,
     margin: EdgeInsets.symmetric(horizontal: 60, vertical: 30),
     padding: EdgeInsets.fromLTRB(30, 40, 30, 40),
